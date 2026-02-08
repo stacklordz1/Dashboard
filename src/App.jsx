@@ -1,24 +1,20 @@
-import React from "react";
-import Sidebar from "./components/Sidebar/Sidebar";
-import Dashboard from "./components/DashBoard/Dashboard";
+import React, { useState } from 'react'
+import SideBar from './components/SideBar/SideBar'
+
 
 const App = () => {
-  return (
-    <div
-      className="
-        min-h-screen
-        bg-gray-600
-        p-4
-        grid
-        gap-4
-        grid-cols-1
-        md:grid-cols-[200px_1fr]
-      "
-    >
-      <Sidebar />
-      <Dashboard />
-    </div>
-  );
-};
+  const [sidebarOpen, setSidebarOpen] = useState(false)
 
-export default App;
+  return (
+    <div className="min-h-screen bg-[#4c4d4c] text-white flex">
+      
+      {/* Desktop sidebar */}
+      <div className="hidden md:flex">
+        <SideBar />
+      </div>
+
+    </div>
+  )
+}
+
+export default App
