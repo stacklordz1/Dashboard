@@ -1,14 +1,11 @@
-import React from "react";
-import Sidebar from "./components/layout/Sidebar";
-// import Dashboard from "./components/DashBoard/Dashboard";
+import React from 'react'
 
 const App = () => {
   return (
-    <div     >
-      <Sidebar />
-      {/* <Dashboard /> */}
+    <div>
+      
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
